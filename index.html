@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONCEPT MARKETING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            min-height: 100vh;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .noto-serif-cm {
+            font-family: "Noto Serif", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 8vw;
+            margin: 40px 0;
+            line-height: 1.2;
+        }
+
+        .fixed-top, .fixed-bottom {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            z-index: 100;
+            font-size: 1.2em;
+        }
+
+        .fixed-top {
+            top: 0;
+        }
+
+        .fixed-bottom {
+            bottom: 0;
+        }
+
+        .fixed-top:hover, .fixed-bottom:hover {
+            color: blue;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 40px;
+            background: white;
+            max-width: 90%;
+        }
+
+        .description {
+            text-align: center;
+            line-height: 1.6;
+            font-size: 1.1em;
+            max-width: 600px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 12vw;
+            }
+            
+            .fixed-top, .fixed-bottom {
+                font-size: 1em;
+                padding: 15px;
+            }
+            
+            body {
+                padding: 80px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 15vw;
+            }
+            
+            .fixed-top, .fixed-bottom {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 class="fixed-top">conceptmarketing.john@gmail.com</h2>
+    
+
+        <div class="content noto-serif-cm">
+            <h1>CONCEPT<br>MARKETING</h1>
+            <p class="description">Strategic marketing solutions to elevate your brand and drive growth through innovative concepts and data-driven approaches.</p>
+        </div>
+    
+    <h2 class="fixed-bottom">417 230 6655</h2>
+</body>
+</html>
