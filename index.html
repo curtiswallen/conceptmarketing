@@ -33,39 +33,16 @@
         }
 
         h1 {
-            font-size: 8vw;
-            margin: 40px 0;
+            font-size: 7vw;
+            margin: 0;
             line-height: 1.2;
-        }
-
-        .fixed-top, .fixed-bottom {
-            position: fixed;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            z-index: 100;
-            font-size: 1.2em;
-        }
-
-        .fixed-top {
-            top: 0;
-        }
-
-        .fixed-bottom {
-            bottom: 0;
-        }
-
-        .fixed-top:hover, .fixed-bottom:hover {
-            color: blue;
         }
 
         .content {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 30px;
-            padding: 40px;
+            gap: 75px;
             background: white;
             max-width: 90%;
         }
@@ -77,12 +54,27 @@
             max-width: 600px;
         }
 
+        .text {
+            text-align: left;
+        }
+
+        .text p {
+            padding-bottom: 20px;
+            line-height: 1.6;
+            font-size: 1.1em;
+            max-width: 600px;
+        }
+
+        .signature {
+            width: 100%;
+            text-align: right;
+        }
+
+        .footer {
+            margin-top: 100px;
+        }
+
         @media (max-width: 768px) {
-            
-            .fixed-top, .fixed-bottom {
-                font-size: 1em;
-                padding: 15px;
-            }
             
             body {
                 padding: 80px 15px;
@@ -91,11 +83,6 @@
 
         @media (max-width: 480px) {
             
-            .fixed-top, .fixed-bottom {
-                font-size: 0.9em;
-                padding: 10px;
-            }
-            
             .content {
                 padding: 20px;
             }
@@ -103,14 +90,26 @@
     </style>
 </head>
 <body>
-    <h2 class="fixed-top">conceptmarketing.john@gmail.com</h2>
-    
 
         <div class="content newsreader-cm">
-            <h1>CONCEPT<br>MARKETING</h1>
             <p class="description">Strategic marketing solutions to elevate your brand and drive growth through innovative concepts and data-driven approaches.</p>
+            <h1>CONCEPT<br>MARKETING</h1>
+            <div class="text">
+                <p>I've been here in Branson representing Concept Marketing for over 30 years, and been lucky enough to work with some of the biggest entertainers, resorts, and attractions in this great community. I've also been blessed to work on several marketing projects that have benefited all of Branson, including bringing the hit television show "As The World Turns" to film episodes in town and a co-operative marketing promotion with Wal-Mart in over 136 of their stores nationwide.</p>
+
+                <p>Concept Marketing doesn't use cookie cutter marketing plans. We focus on things that are unique to you and your company to design original campaigns that work within your budget. While others try to think outside the box, we believe there is no box.</p>
+
+                <p>Let's get together and see what we can come up with for you. No job is too small, no budget is too big.</p>
+
+                <p class="signature">John Wallen</p>
+            </div>
+            <div class="footer">
+                conceptmarketing.john@gmail.com<br/><br/>417 230 6655
+            </div>
+
+            
         </div>
     
-    <h2 class="fixed-bottom">417 230 6655</h2>
+    
 </body>
 </html>
